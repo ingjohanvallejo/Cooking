@@ -114,7 +114,9 @@ class ViewController: UITableViewController {
         
         self.tableView.deleteRows(at: [indexPath], with: .fade)
     }*/
-    
+
+    //MARK - UITableViewDelegate
+
     //Se agregan las opciones de Compartir y Borrar al menú que se despliega al hacer swipe en la celda
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         
@@ -139,9 +141,7 @@ class ViewController: UITableViewController {
         
         return [deleteAction, shareAction]
     }
-    
-    //MARK - UITableViewDelegate
-    
+
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
       /*  let recipe = self.recipes[indexPath.row]
