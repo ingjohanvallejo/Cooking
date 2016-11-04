@@ -11,6 +11,7 @@ import UIKit
 class FullRecipeCell1: UITableViewCell {
 
     @IBOutlet var imageRecipe: UIImageView!
+    
     @IBOutlet var nameRecipe: UILabel!
     
     override func awakeFromNib() {
